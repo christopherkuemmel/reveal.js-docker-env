@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  reveal.js:
+    container_name: reveal.js
+    build: .
+    ports:
+      - 9000:8000
+    volumes:
+      - ./slides:/reveal.js/md
+    command: npm start
