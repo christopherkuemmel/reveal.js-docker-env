@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/white.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -25,8 +25,8 @@
 		<div class="reveal">
 			<div class="slides">
 				<section data-markdown="md/slides.md"
-                    data-separator="\n\n\n"
-                    data-separator-vertical="\n\n"
+                    data-separator="^\n\n\n"
+                    data-separator-vertical="^\n\n"
                     data-separator-notes="Note:"
                     data-charset="utf-8">
                 </section>
@@ -48,6 +48,8 @@
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
+			// Shows the slide number using default formatting
+			Reveal.configure({ slideNumber: true });
 		</script>
 	</body>
 </html>
