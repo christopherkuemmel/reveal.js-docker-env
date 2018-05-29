@@ -9,4 +9,5 @@ services:
     volumes:
       - ./slides:/reveal.js/md
       - ./index.html:/reveal.js/index.html
+      - ./custom.css:/reveal.js/css/theme/custom.css
     command: npm start
